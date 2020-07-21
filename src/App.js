@@ -1,24 +1,36 @@
-import React from 'react';
+import React from "react";
 import logo from './logo.svg';
-import './App.css';
+import Card from "./Card";
 
 function App() {
+  // const title = ["Card title", "Special title treatment"];
+  // const text = [
+  //   "Some quick example text to build on the card title and make up the bulk of the card's content.",
+  //   "With supporting text below as a natural lead-in to additional content.",
+  // ];
+  // const link = [
+  //   "https://github.com/netology-code/ra16-homeworks/blob/master/composition/cards/assets/card1.png",
+  //   "https://github.com/netology-code/ra16-homeworks/blob/master/composition/cards/assets/card2.png",
+  // ];
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Card logo={logo}>
+        {"Card title"}
+        {"Some quick example text to build on the card title and make up the bulk of the card's content."}
+        {
+          "https://github.com/netology-code/ra16-homeworks/blob/master/composition/cards/assets/card1.png"
+        }
+      </Card>
+
+      <Card>
+        {"Special titsle treatment"}
+        {"With supporting text below as a natural lead-in to additional content."}
+        {
+          "https://github.com/netology-code/ra16-homeworks/blob/master/composition/cards/assets/card2.png"
+        }
+        </Card>
     </div>
   );
 }
