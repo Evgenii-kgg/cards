@@ -1,6 +1,7 @@
 import React from "react";
-import logo from './logo.svg';
-import Card from "./Card";
+import logo from "./logo.svg";
+import Card1 from "./Card";
+import Card2 from "./Card";
 
 function App() {
   // const title = ["Card title", "Special title treatment"];
@@ -13,24 +14,32 @@ function App() {
   //   "https://github.com/netology-code/ra16-homeworks/blob/master/composition/cards/assets/card2.png",
   // ];
 
-
   return (
     <div>
-      <Card logo={logo}>
-        {"Card title"}
-        {"Some quick example text to build on the card title and make up the bulk of the card's content."}
-        {
+      <Card1
+        
+        title={"Card title"}
+        all={
+          "Some quick example text to build on the card title and make up the bulk of the card's content."
+        }
+        href={
           "https://github.com/netology-code/ra16-homeworks/blob/master/composition/cards/assets/card1.png"
         }
-      </Card>
+      >
+        {logo}
+      </Card1>
 
-      <Card>
-        {"Special titsle treatment"}
-        {"With supporting text below as a natural lead-in to additional content."}
-        {
+      <Card2
+        title={"Special titsle treatment"}
+        all={
+          "With supporting text below as a natural lead-in to additional content."
+        }
+        href={
           "https://github.com/netology-code/ra16-homeworks/blob/master/composition/cards/assets/card2.png"
         }
-        </Card>
+      >
+        
+      </Card2>
     </div>
   );
 }
