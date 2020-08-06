@@ -2,12 +2,12 @@ import React from "react"
 import logo from "./logo.svg"
 
 
-function Card1(props) {
-    console.log(props);
+function Card(props) {
+    console.log(props.children);
     
     return (
       <div className="card" style={{ width: "18rem" }}>
-        <img src={props.children} className="card-img-top" />
+       {props.children}
         <div className="card-body">
           <h5 className="card-title"><h2>{props.title}</h2></h5>
           <p className="card-text">
@@ -24,5 +24,5 @@ function Card1(props) {
     );
   }
   
-  export default Card1;
+  export default Card;
   
